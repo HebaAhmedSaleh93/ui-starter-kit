@@ -7,6 +7,8 @@ export const Alert = {
       root: ({ theme }: { theme: Theme }) =>
         theme.unstable_sx({
           fontSize: "1rem",
+          border: 1,
+          borderColor: "transparent",
         }),
 
       filledSuccess: ({ theme }: { theme: Theme }) =>
@@ -33,5 +35,30 @@ export const Alert = {
           backgroundColor: "warning.main",
         }),
     },
+
+    outlinedSuccess: ({ theme }: { theme: Theme }) =>
+      theme.unstable_sx({
+        backgroundColor: "success.light",
+      }),
+
+    outlinedError: ({ theme }: { theme: Theme }) =>
+      theme.unstable_sx({
+        backgroundColor: "error.light",
+      }),
+
+    outlinedInfo: ({ theme }: { theme: Theme }) =>
+      theme.unstable_sx({
+        backgroundColor: "info.light",
+      }),
+
+    outlinedWarning: ({ theme }: { theme: Theme }) =>
+      theme.unstable_sx({
+        backgroundColor: "warning.light",
+      }),
+
+    outlined: ({ theme }: { theme: Theme }) =>
+      theme.unstable_sx({
+        backgroundColor: "warning.light",
+      }),
   },
 };
